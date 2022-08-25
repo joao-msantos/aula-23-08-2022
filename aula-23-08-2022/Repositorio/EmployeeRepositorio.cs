@@ -6,7 +6,7 @@ namespace aula_23_08_2022.Repositorio
     {
         private static List<Employee> allEmployees = new List<Employee>();
 
-        private static IEnumerable<Employee> AllEmployees
+        public static IEnumerable<Employee> AllEmployees
         {
             get { return allEmployees; }
         }
