@@ -19,7 +19,7 @@ namespace aula_23_08_2022.Controllers
         [HttpPost]
         public IActionResult Create(Employee employee)
         {
-            Repositorio.Create(employee);
+            EmployeeRepositorio.Create(employee);
 
             return View("Thanks", employee);
         }

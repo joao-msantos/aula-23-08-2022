@@ -1,10 +1,8 @@
-﻿
-using System.Collections.Generic;
-using aula_23_08_2022.Models;
+﻿using aula_23_08_2022.Models;
 
 namespace aula_23_08_2022.Repositorio
 {
-    public static class Repositorio
+    public static class EmployeeRepositorio
     {
         private static List<Employee> allEmployees = new List<Employee>();
 
