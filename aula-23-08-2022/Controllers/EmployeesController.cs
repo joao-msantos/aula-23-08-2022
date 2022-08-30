@@ -41,6 +41,14 @@ namespace aula_23_08_2022.Controllers
 
             return RedirectToAction("Index");
         }
+
+        [HttpPost]
+        public IActionResult Delete(string empname)
+        {
+            Employee employee = EmployeeRepositorio.AllEmployees.Where(e => e.Name == empname).FirstOrDefault();
+            EmployeeRepositorio.Delete(employee);
+            return RedirectToAction("Index");
+        }
     }
 
 

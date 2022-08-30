@@ -15,5 +15,10 @@ namespace aula_23_08_2022.Repositorio
         {
             allEmployees.Add(employee);
         }
+
+        public static void Delete(Employee employee)
+        {
+            allEmployees.Remove(employee);
+        }
     }
 }
